@@ -6,17 +6,21 @@
 }
   
 .container{ 
-	width: 100vh;
+	min-height: 100vh;
 	background-color:bisque;
 }
   
 .letters {
-	display: flex;
+	display:flex;
 	justify-content: center;
 	padding-top: 20px;
 	margin-bottom: 20px;
 	text-transform:uppercase;
 	font-size: 60px;
+}
+
+.letters p {
+
 	text-align: center;
 	background-color: rgb(250, 150, 100);
 	width: 70px;
@@ -24,15 +28,15 @@
 	border-radius: 15%;
 	border-color: rgb(250, 125, 75);
 	border-style: solid;
-	
+
 }
 
-.letters > p:n-th-child(even) :hover {
+.letters:hover p:nth-child(even) {
 	transform: rotateY(360deg);
 	transition: 0.5s;
 }
 
-.letters > p:n-th-child(odd) :hover {
+.letters:hover p:nth-child(odd){
 	transform: rotateX(360deg);
 	transition: 1.5s;
 }
