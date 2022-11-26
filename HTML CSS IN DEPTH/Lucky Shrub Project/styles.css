@@ -1,8 +1,11 @@
 body {
 
-    background-color: rgb(215, 213, 213);
+    background-color: rgb(190, 225, 246);
     font-family: 'Open Sans', sans-serif;
-    margin: 30px;
+    margin-top: 20px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    margin-right: 10px;
 
 }
 
@@ -20,24 +23,40 @@ header img {
      display:block;
      margin-left: auto;
      margin-right: auto;
+     padding-bottom: 5% ;
 
 }
 
 nav ul {
+    display: flex;
     list-style: none;
-    text-align:left;
+    border-top: solid;
+    border-top-color: rgb(81, 143, 164);
+    justify-content: space-evenly;
 }
 
 nav li {
-    display:inline-block;
+    
+    flex: 1;
+    font-size: medium;
+    font-weight: bold;
+    padding: 3%;    
+   
 }
 
-section {
+
+.banner {
+    padding: 5%, 0 , 5%, 0;
+    
+}
+
+.toparticles {
     display:flex;
 }
 
-article {
+.toparticles article {
     flex: 1;
+    padding: 3%;
 }
 
 footer {
