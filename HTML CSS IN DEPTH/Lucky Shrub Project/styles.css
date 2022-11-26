@@ -1,6 +1,11 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
 body {
 
-    background-color: rgb(190, 225, 246);
+    background-color: rgb(212, 209, 209));
     font-family: 'Open Sans', sans-serif;
     margin-top: 20px;
     margin-right: 10px;
@@ -31,7 +36,7 @@ nav ul {
     display: flex;
     list-style: none;
     border-top: solid;
-    border-top-color: rgb(81, 143, 164);
+    border-top-color: rgb(121, 181, 121);
     justify-content: space-evenly;
 }
 
@@ -44,10 +49,30 @@ nav li {
    
 }
 
-
+section{
+    display: flex;
+}
 .banner {
+    flex: 1;
+    position: relative;
     padding: 5%, 0 , 5%, 0;
     
+}
+
+.bannertext{
+    flex: 1;
+    position: absolute;
+    width: 100%;
+    top: 40%;
+    text-align: center;
+    color: whitesmoke;
+    
+}
+
+.bannertext p{
+    flex: 1;
+    text-align: center;
+    font-size: 16px;
 }
 
 .toparticles {
