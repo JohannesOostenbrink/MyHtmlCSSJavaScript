@@ -7,10 +7,10 @@ body {
 
     background-color: rgb(212, 209, 209));
     font-family: 'Open Sans', sans-serif;
-    margin-top: 20px;
-    margin-right: 10px;
-    margin-bottom: 10px;
-    margin-right: 10px;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    
+   
 
 }
 
@@ -42,7 +42,6 @@ header img {
 
 .navigation a {
     
-    list-style: none;
     display: inline-block; 
     padding: 25px;
     text-align: center;
@@ -56,24 +55,25 @@ header img {
 }
 
 
-.banner { 
+.banner article img { 
+    display: flex;
+    width: 100%;
     position: relative;
-    margin-top: 5px;
-    margin-bottom: 5px;
-    
 }
 
-.bannertext{
+.banner .banner_text{
     
     position: absolute;
+    flex-flow: wrap;
     width: 100%;
-    top: 40%;
+    top: 45%;
     text-align: center;
+    text-overflow: ellipsis;
     color: whitesmoke;
     
 }
 
-.bannertext p{
+article .banner_text p{
     
     text-align: center;
 }
