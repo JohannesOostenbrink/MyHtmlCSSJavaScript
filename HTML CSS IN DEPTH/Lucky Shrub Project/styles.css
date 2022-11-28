@@ -38,15 +38,19 @@ header img {
     flex-flow: wrap;
     justify-content: space-evenly;
     list-style: none;
+    border-radius: 18px;
 }
 
 .navigation a {
     
     display: inline-block; 
-    padding: 25px;
+    padding: 20px;
     text-align: center;
     text-decoration: none;
     color: whitesmoke;
+    font-weight: bold;
+    letter-spacing: 0.5vw;
+    cursor: pointer;
    
 }
 
