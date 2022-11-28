@@ -28,7 +28,7 @@ header img {
      display:block;
      margin-left: auto;
      margin-right: auto;
-     padding-bottom: 5% ;
+
 
 }
 
@@ -39,6 +39,8 @@ header img {
     justify-content: space-evenly;
     list-style: none;
     border-radius: 18px;
+    margin-top: 2em;
+    margin-bottom: 2em;
 }
 
 .navigation a {
@@ -51,11 +53,17 @@ header img {
     font-weight: bold;
     letter-spacing: 0.5vw;
     cursor: pointer;
+    transition: color 0.5s;
    
 }
 
 .navigation a:hover {
-    background-color: rgb(50, 83, 50);
+    
+    color: rgb(59, 112, 130);
+}
+
+.navigation a:active{
+    opacity: 0.5;
 }
 
 
