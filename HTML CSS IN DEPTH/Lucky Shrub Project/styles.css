@@ -6,21 +6,21 @@
 body {
 
     background-color: rgb(212, 209, 209));
-    font-family: 'Open Sans', sans-serif;
-    margin-top: 2rem;
-    margin-bottom: 2rem;
+    font-family: Roboto;
+    margin-top: 30px;
+    margin-bottom: 30px;
     
    
 
 }
 
 h1 {
-    font-size: 2rem;
+    font-size: 60px;
 
 }
 
 h2 {
-    font-size: 1.5rem;
+    font-size: 20px;
 
 }
 
@@ -34,13 +34,15 @@ header img {
 
 .navigation {
     display: flex;
-    background-color:rgb(121, 181, 121);
     flex-flow: wrap;
+    background-color:rgb(121, 181, 121);
     justify-content: space-evenly;
     list-style: none;
     border-radius: 18px;
-    margin-top: 2em;
-    margin-bottom: 2em;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    margin-left: 10px;
+    margin-right: 10px;
 }
 
 .navigation a {
@@ -51,7 +53,7 @@ header img {
     text-decoration: none;
     color: whitesmoke;
     font-weight: bold;
-    letter-spacing: 0.5vw;
+    letter-spacing: 3px;
     cursor: pointer;
     transition: color 0.5s;
    
@@ -67,25 +69,29 @@ header img {
 }
 
 
-.banner article img { 
-    display: flex;
-    width: 100%;
+.banner_img { 
     position: relative;
+    display: block;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    width: 100%;
+    
 }
 
-.banner .banner_text{
+.banner_text{
     
     position: absolute;
-    flex-flow: wrap;
     width: 100%;
-    top: 45%;
+    top: 40%;
     text-align: center;
-    text-overflow: ellipsis;
+    max-height: 280px;
     color: whitesmoke;
     
 }
 
-article .banner_text p{
+.banner_text p{
     
     text-align: center;
 }
@@ -100,8 +106,16 @@ article .banner_text p{
 .topart article {
     flex: 1;
     text-align: center;
-    margin: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 30px;
+    transition-duration: 0.5s;
 
+}
+
+.topart article:hover {
+    opacity: 0.5 ;
+    cursor: pointer;
 }
 
 @media (max-width: 540px ){
