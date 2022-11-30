@@ -54,7 +54,6 @@ header img {
     color: whitesmoke;
     font-weight: bold;
     letter-spacing: 3px;
-    cursor: pointer;
     transition: color 0.5s;
    
 }
@@ -62,6 +61,7 @@ header img {
 .navigation a:hover {
     
     color: rgb(59, 112, 130);
+    cursor: pointer;
 }
 
 .navigation a:active{
@@ -69,48 +69,55 @@ header img {
 }
 
 
-.banner_img { 
+.banner_preview .picture {
+    width: 100%;
     position: relative;
-    display: block;
-    margin-left: 10px;
-    margin-right: 10px;
-    margin-top: 30px;
-    margin-bottom: 30px;
-    width: 100%;
+    
     
 }
 
-.banner_text{
-    
+
+.picture .banner_heading{
     position: absolute;
-    width: 100%;
-    top: 40%;
     text-align: center;
-    max-height: 280px;
-    color: whitesmoke;
-    
-}
-
-.banner_text p{
-    
-    text-align: center;
+   
 }
 
 
 .topart {
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 14px;
+    
+}
+
+.article {
+    display: grid;
+    grid-template-rows: 2fr 1fr;
+    transition-duration: 1s;
+}
+
+.topart_img{
+    width: 100%;
+    vertical-align: top;
+}
+
+.topart_info{
+    vertical-align: top;
+    text-align: center;
+    margin-top: 5px;
+    margin-bottom: 5px;
 }
 
 
+.topart_heading {
+    margin-bottom: 15px;
+    font-weight: bold;
+    font-size: 20px;
+}
 
-.topart article {
-    flex: 1;
-    text-align: center;
-    margin-left: 10px;
-    margin-right: 10px;
-    margin-bottom: 30px;
-    transition-duration: 0.5s;
-
+.topart_par{
+    font-size: 14px;
 }
 
 .topart article:hover {
@@ -123,6 +130,8 @@ header img {
         display: block;
     }
 }
+
+
 
 footer {
     display: flex;
