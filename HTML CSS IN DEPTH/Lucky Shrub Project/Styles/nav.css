@@ -1,0 +1,36 @@
+.navigation {
+    display: flex;
+    flex-flow: wrap;
+    background-color:rgb(121, 181, 121);
+    justify-content: space-evenly;
+    list-style: none;
+    border-radius: 18px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+
+.navigation a {
+    
+    display: inline-block; 
+    padding: 20px;
+    text-align: center;
+    text-decoration: none;
+    color: whitesmoke;
+    font-weight: bold;
+    letter-spacing: 3px;
+    transition: color 0.5s;
+   
+}
+
+.navigation a:hover {
+    
+    color: rgb(59, 112, 130);
+    cursor: pointer;
+}
+
+.navigation a:active{
+    opacity: 0.5;
+}

@@ -1,0 +1,111 @@
+
+.picture {
+    padding-left: 20px;
+    padding-right: 20px;
+    position: relative;
+  
+}
+
+.banner_image{
+    width: 100%;
+}
+
+
+.banner_heading{
+
+    position: absolute;
+    top: 35px;
+    left: 20px;
+    right: 20px;
+    text-align: center;
+    background-color: rgba( 0, 0, 0, 0.5);
+    color: white;
+   
+}
+
+.button_text{
+    padding: 4px;
+    border-radius: 5px;
+    background-color: white;
+    color: black;
+    font-family: Roboto, Arial;
+    font-size: 14px;
+    font-weight: 500;
+    transition: opacity 0.5s;
+}
+
+.button_text:hover{
+    background-color: black;
+    color: white;
+
+}
+
+.button_text:active{
+    background-color: black;
+    color: white;
+
+    opacity:0.1;
+
+}
+
+@media (width < 350px){
+    .banner_heading{
+        top: 35px;
+    }
+
+    h1{
+        font-size: 20px;
+    }
+    .button_text{
+        
+        font-size: 10px;
+        
+    }
+}
+
+@media (width > 400px){
+    .banner_heading{
+        top:45px;
+    }
+}
+
+@media (width > 500px){
+    .banner_heading{
+        top: 60px;
+    }
+}
+
+@media (width > 600px){
+    .banner_heading{
+        top:80px;
+    }
+    h1{
+        font-size: 50px;
+    }
+}
+
+@media (width > 800px){
+    .banner_heading{
+        top:120px;
+    }
+    h1{
+        font-size: 60px;
+    }
+
+}
+
+@media (width > 1000px){
+    .banner_heading{
+        top: 150px;
+    }
+    h1{
+        font-size: 70px;
+    }
+
+    .button_text{
+        
+        font-size: 20px;
+        
+    }
+
+}
