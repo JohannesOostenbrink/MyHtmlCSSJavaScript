@@ -1,41 +1,63 @@
 
 .topart {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    column-gap: 14px;
+    grid-template-columns: 1fr;
+    padding-left: 20px;
+    padding-right: 20px;
     
 }
+
 
 .article {
     display: grid;
     grid-template-rows: 2fr 1fr;
     transition-duration: 1s;
+    padding-bottom: 20px;
 }
 
 .topart_img{
     width: 100%;
     vertical-align: top;
+    padding-bottom: 20px;
 }
 
 .topart_info{
     vertical-align: top;
     text-align: center;
-    margin-top: 5px;
-    margin-bottom: 5px;
+    margin: 0;
+    
 }
 
 
 .topart_heading {
-    margin-bottom: 15px;
     font-weight: bold;
     font-size: 20px;
+    padding-bottom: 5px;
 }
 
 .topart_par{
     font-size: 14px;
+    margin: 0;
 }
 
 .topart article:hover {
     opacity: 0.5 ;
     cursor: pointer;
+}
+
+@media (width > 600px){
+    .topart{
+        grid-template-columns: 1fr 1fr 1fr;
+        column-gap: 10px;
+    
+}
+
+.article {
+    grid-template-rows: 1fr 1fr;
+    padding-bottom: 10px;
+}
+
+.topart_img{
+    padding-bottom: 10px;
+}
 }
