@@ -1,0 +1,41 @@
+
+.topart {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 14px;
+    
+}
+
+.article {
+    display: grid;
+    grid-template-rows: 2fr 1fr;
+    transition-duration: 1s;
+}
+
+.topart_img{
+    width: 100%;
+    vertical-align: top;
+}
+
+.topart_info{
+    vertical-align: top;
+    text-align: center;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+
+.topart_heading {
+    margin-bottom: 15px;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.topart_par{
+    font-size: 14px;
+}
+
+.topart article:hover {
+    opacity: 0.5 ;
+    cursor: pointer;
+}
