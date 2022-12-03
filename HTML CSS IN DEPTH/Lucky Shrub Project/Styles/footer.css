@@ -1,16 +1,41 @@
 footer {
     display: flex;
+    justify-content: space-between;
     background-color: black;
-}
-
-
-footer div > p {
-    color: whitesmoke;
-    margin-left: 0%;
-    margin-right: 20%;
+   
     
 }
 
-footer div > p:hover{
-    color: rgb(92, 154, 175);
+.logo_container{
+    padding-left: 20px;
+    
 }
+
+.logo{
+    height: 50px;
+    
+}
+
+.copyright_container{
+    padding-right: 20px;
+    
+}
+
+
+.copyright_par {
+    color: whitesmoke;
+    font-size: 12px;
+    text-decoration: underline;
+    transition: opacity 0.5s;
+}
+
+.copyright_par:hover {
+    color: rgb(59, 112, 130);
+
+}
+
+.copyright_par:active{
+    opacity: 0.4;
+
+}
+

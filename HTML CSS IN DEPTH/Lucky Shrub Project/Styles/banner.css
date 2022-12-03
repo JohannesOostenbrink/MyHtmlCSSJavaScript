@@ -1,9 +1,11 @@
 
 .picture {
-    padding-left: 20px;
-    padding-right: 20px;
     padding-bottom: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-color: rgb(59, 112, 130);
     position: relative;
+ 
   
 }
 
@@ -16,8 +18,8 @@
 
     position: absolute;
     top: 35px;
-    left: 20px;
-    right: 20px;
+    left: 10px;
+    right: 10px;
     text-align: center;
     background-color: rgba( 0, 0, 0, 0.5);
     color: white;
@@ -28,22 +30,27 @@
     padding: 4px;
     border-radius: 5px;
     background-color: white;
-    color: black;
+    color: gray;
+    border: 2px;
+    border-color: gray;
     font-family: Roboto, Arial;
     font-size: 14px;
-    font-weight: 500;
+    font-weight: 400;
+    box-shadow: inset 1px 1px 6px ;
     transition: opacity 0.5s;
+    margin-bottom: 10px;
+    margin-top: 10px;
 }
 
 .button_text:hover{
     background-color: black;
-    color: white;
+    color:rgb(59, 112, 130);
 
 }
 
 .button_text:active{
     background-color: black;
-    color: white;
+    color:rgb(59, 112, 130);
 
     opacity:0.1;
 
@@ -74,6 +81,13 @@
     .banner_heading{
         top: 60px;
     }
+    h1{
+        font-size: 40px;
+    }
+    .button_text{
+        font-size: 20px;
+    }
+
 }
 
 @media (width > 600px){
@@ -96,16 +110,22 @@
 }
 
 @media (width > 1000px){
+
+    .picture {
+        padding-bottom: 40px;
+        padding-top: 30px;
+    }
+
     .banner_heading{
-        top: 150px;
+        top: 130px;
     }
     h1{
-        font-size: 70px;
+        font-size: 90px;
     }
 
     .button_text{
         
-        font-size: 20px;
+        font-size: 30px;
         
     }
 
