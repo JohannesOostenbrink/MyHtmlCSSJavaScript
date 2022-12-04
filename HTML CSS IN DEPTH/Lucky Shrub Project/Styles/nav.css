@@ -34,3 +34,38 @@
 .navigation a:active{
     opacity: 0.5;
 }
+
+@media (width > 460px){
+    .display_nav{
+        display: none;
+    }
+}
+
+@media (width < 460px){
+    .navigation{
+        display: none;
+    }
+    .nav_checkbox{
+        display: none;
+    }
+
+    .display_nav{
+        background-color: rgb(121, 181, 121);
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    .nav_img{
+        height: 50px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-left: 20px;
+        
+    }
+
+}
+
+.nav_checkbox:checked ~ .navigation{
+    display: block;
+}
+
