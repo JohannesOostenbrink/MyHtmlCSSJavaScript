@@ -9,30 +9,32 @@
 
 
 .article {
+    background-color: rgba(197, 220, 227, 0.5); 
     display: grid;
     grid-template-rows: 2fr 1fr;
+    row-gap: 15px;
     transition-duration: 1s;
-    padding-bottom: 20px;
-}
-
-.topart_img{
-    width: 100%;
-    vertical-align: top;
     padding-bottom: 10px;
-}
-
-.topart_info{
-    vertical-align: top;
-    text-align: center;
-    margin: 0;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 10px;
     
 }
 
 
+.imgage{
+    width: 100%;
+}
+
+
 .topart_heading {
+    background-color: rgba(121, 181, 121, 0.5);
+    border-radius: 8px;
+    text-align: center;
     font-weight: bold;
     font-size: 20px;
-    padding-bottom: 5px;
+    margin-bottom: 20px;
+    margin-top: 20px;
 }
 
 .topart_par{
@@ -48,12 +50,12 @@
 @media (width > 600px){
     .topart{
         grid-template-columns: 1fr 1fr 1fr;
-        column-gap: 10px;
+        column-gap: 20px;
     
 }
 
 .article {
-    grid-template-rows: 1fr 1fr;
+    grid-template-rows: 2fr 1fr;
     padding-bottom: 10px;
 }
 
